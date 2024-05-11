@@ -62,8 +62,8 @@ function search(data, keyword) {
     allOfferCourses = data.data.eligibleOfferCourses
     for (i=0; i<allOfferCourses.length; i++) {
         courseId = allOfferCourses[i].courseId
-        if (courseId.includes(keyword)) {
-            courseName = allOfferCourses[i].courseName
+        courseName = allOfferCourses[i].courseName
+        if (courseId.toLowerCase().includes(keyword.toLowerCase()) || courseName.toLowerCase().includes(keyword.toLowerCase())) {
             facultyName = allOfferCourses[i].facualtyName
             section = allOfferCourses[i].section
             timeSlot = allOfferCourses[i].timeSlot
