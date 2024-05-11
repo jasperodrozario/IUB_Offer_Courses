@@ -1,0 +1,21 @@
+body {
+    margin: 20px;
+}
+
+.search-body {
+    display: flex;
+}
+
+.button-style {
+    background-color: rgba(0, 0, 0, 0.678);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    height: 35px;
+    width: 70px;
+    color: white;
+}
+
+.button-style:hover {
+    background-color: rgba(0, 0, 0, 0.473);
+}
